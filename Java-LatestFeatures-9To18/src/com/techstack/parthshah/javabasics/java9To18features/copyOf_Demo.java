@@ -12,8 +12,8 @@ public class copyOf_Demo {
 		hMap.put("Captain", "Rohit Sharma");
 		hMap.put("WicketKepper", "Risabh Pant");
 		hMap.put("ViceCaptain", "Virat");
-//		updateMap(hMap);
-//		hMap.entrySet().stream().forEach(x-> System.out.println("Key-: "+ x.getKey()+ ", Value-:"+ x.getValue()));
+		updateMap(hMap);
+		hMap.entrySet().stream().forEach(x-> System.out.println("Key-: "+ x.getKey()+ ", Value-:"+ x.getValue()));
 		Map<String, String> copyOfhMap = Map.copyOf(hMap);
 		updateMap(copyOfhMap);//throws exception-UnSupportedException on ImmutableCollections copyOfhMap
 		
