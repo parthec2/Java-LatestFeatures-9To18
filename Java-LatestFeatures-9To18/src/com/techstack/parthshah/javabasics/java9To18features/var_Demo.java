@@ -8,12 +8,14 @@ public class var_Demo {
 
 	public static void main(String[] args) {
 		List<String>  lstStr = List.of("AA","BB","CC","DD");
-//		var  lstStr2 = List.of("AA","BB","CC","DD");//java.util.List<String>
-//		var a= "AA";//java.lang.String
-//		var var=1;
-//		var b = var +5;
-//		System.out.println(b);
-//		System.out.println(a);
+		var  lstStr2 = List.of("AA","BB","CC","DD");//java.util.List<String>
+		var a= "AA";//java.lang.String
+		var var=1;//valid
+		//var a=null;//not valid
+		var b = var +5;
+		System.out.println(b);
+		System.out.println(a);
+		System.out.println("var a is type of -: " + a.getClass());
 		
 	}
 
