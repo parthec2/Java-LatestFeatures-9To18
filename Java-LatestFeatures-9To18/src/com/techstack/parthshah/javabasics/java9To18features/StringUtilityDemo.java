@@ -3,7 +3,8 @@ package com.techstack.parthshah.javabasics.java9To18features;
 public class StringUtilityDemo {
 
 	public static void main(String[] args) {
-		System.out.println("  ".isBlank());
+		//java 10
+		System.out.println("  ".isBlank());//returns true if string is empty or white space
 		
 		System.out.println(" AAAA ".stripLeading().replace(" ", "#"));
 		System.out.println(" AAAA ".stripTrailing().replace(" ", "#"));//Jdk11

@@ -7,15 +7,22 @@ public class NullPointerExceptionEnhancement {
 		objAdd.setCity(null);
 		Company objComp = new Company("Parth Shah", objAdd);
 
-		//System.out.println("objComp.getEmpAddress().getCity() is NULL"); 
+		System.out.println("objComp.getEmpAddress().getCity() is NULL"); 
 		
-		/*
+		/*Before JDK-14
+		 Exception in thread "main" java.lang.NullPointerException at method name(Filename.java)
+		/*New msg in JDK-14
 Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.toString()" because the return value of
 "com.techstack.parthshah.javabasics.java9To17features.Address.getCity()" is null
 at com.techstack.parthshah.javabasics.java9To17features.NullPointerExceptionEnhancement.main(NullPointerExceptionEnhancement.java:22)
 		*/
-		
-//		System.out.println(objComp.getEmpAddress().getCity().toString());
+
+		//City is null--it clearly shows getEmpAddress().getCity()
+		//System.out.println(objComp.getEmpAddress().getCity().toString());
+
+		//Address obj is null-it clearly show getEmpAddress is null
+		objComp.setEmpAddress(null);
+		System.out.println(objComp.getEmpAddress().getCity().toString());
 
 		System.out.println("=====================================================================================");
 		System.out.println("objComp.getEmpAddress() is NULL");
